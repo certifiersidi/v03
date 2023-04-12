@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.Welcome{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+}
+
+.pet{
+  height: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#ask{
+  font-size: 40px;
+  position: relative;
+  top: -25px;
+  font-weight: bold;
+}
+
+#entry{
+  
+  height:500px;
+  width: 100px;
+  padding:20px;
+  display: block;
+  position: relative;
+  left: 500px;
+  top: -120;
+}
+fieldset{
+  border-color: white;
+  border: 5px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(51, 51, 51, 0.63);
+}
+#petprint{
+  color: blue;
+}
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Section subtitles */
+.section-subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #666;
+  text-align: center;
+}
+
+/* Navigation links */
+#nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#nav-list li {
+  margin-right: 10px;
+}
+
+#nav-link {
+  display: block;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#nav-link:hover {
+  background-color: #43a047;
+}
+.appointment-form {
+  background-color: #fff;
+  padding: 30px;
+  margin: 50px 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.appointment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.appointment-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f8f8f8;
+}
+
+.appointment-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+}
+
+.appointment-form input[type="submit"]:hover {
+  background-color: #43a047;
+}
+
+.error, .success {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  background-color: #ffb3b3;
+  color: #cc0000;
+}
+
+.success {
+  background-color: #b3ffb3;
+  color: #006600;
+}
+.appointment-form {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .appointment-form {
+    margin: 30px auto;
+  }
+}
+
+.loginf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 70px; /* increased padding */
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 550px; 
+  font-size: 20px; 
+}
+
+.loginf h2 {
+  font-size: 24px; 
+}
+
+.loginf label {
+  font-size: 20px; 
+}
+
+.loginf input[type="text"],
+.loginf input[type="password"] {
+  font-size: 18px;
+  padding: 15px; 
+  width: 110%; 
+  box-sizing: border-box; 
+}
+
+.loginf input[type="submit"] {
+  font-size: 20px; 
+  padding: 12px 20px; 
+}
